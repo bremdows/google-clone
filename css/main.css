@@ -1,0 +1,55 @@
+:root{
+    --negro: #000;
+}
+*{
+    padding: 0 ;
+    margin: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* Now 1rem is equal to 10px */
+}
+body{
+    font: normal normal 1.6rem "Open Sans", sans-serif;
+}
+/* 
+    GENERALES
+*/
+a{
+    text-decoration: none;
+    color: var(--negro);
+}
+ul{
+    list-style: none;
+}
+/* 
+    UTILITARIOS
+*/
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu li{
+    margin-right: 2rem;
+}
+.menu li:last-child{
+    margin-right: 0;
+}
+.menu.left{
+    justify-content: flex-start;
+}
+.menu.right{
+    justify-content: flex-end;
+}
+/*
+    CABECERA
+*/
+.cabecera{
+    display: flex;
+    justify-content: flex-end;
+}
