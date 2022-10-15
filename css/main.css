@@ -1,5 +1,11 @@
 :root{
     --negro: #000;
+    --blanco: #fff;
+    /*
+        cOLORES
+    */
+    --primary-color: #202124;
+
 }
 *{
     padding: 0 ;
@@ -16,16 +22,25 @@ html{
 }
 body{
     font: normal normal 1.6rem "Open Sans", sans-serif;
+    background: var(--primary-color);
 }
 /* 
     GENERALES
 */
 a{
     text-decoration: none;
-    color: var(--negro);
+    color: var(--blanco);
+}
+p{
+    color: var(--blanco);
 }
 ul{
     list-style: none;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: inline-block;
 }
 /* 
     UTILITARIOS
@@ -33,6 +48,7 @@ ul{
 .menu{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .menu li{
     margin-right: 2rem;
@@ -52,4 +68,21 @@ ul{
 .cabecera{
     display: flex;
     justify-content: flex-end;
+}
+.cabecera .menu li img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    max-width: 4rem;
+    margin-top: 0.6rem;
+    object-fit: cover;
+}
+/*
+    PARTE CENTRAL DE LA WEB
+*/
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
