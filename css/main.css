@@ -1,10 +1,14 @@
 :root{
+    /*
+        GENERICOS
+    */
     --negro: #000;
     --blanco: #fff;
     /*
         cOLORES
     */
     --primary-color: #202124;
+    --icon-color: #9aa0a6;
 
 }
 *{
@@ -19,10 +23,12 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%; /* Now 1rem is equal to 10px */
+    height: 100%;
 }
 body{
     font: normal normal 1.6rem "Open Sans", sans-serif;
     background: var(--primary-color);
+    height: 100%;
 }
 /* 
     GENERALES
@@ -62,6 +68,15 @@ img{
 .menu.right{
     justify-content: flex-end;
 }
+/* 
+    MAIN CONTENT
+*/
+.main-content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 40rem;
+}
 /*
     CABECERA
 */
@@ -83,6 +98,26 @@ img{
 .main{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    height: 100%;
+}
+.main form{
+    text-align: center;
+}
+.main form .group-field.text{
+    position: relative;
+}
+.main form .group-field.text{
+}
+.main form .group-field.text input{
+    min-width: 50rem;
+    border-radius: 3rem;
+    border: none;
+    padding: 1.5rem 2rem;
+}
+.main form .group-field.text span{
+    position: absolute;
+    left: 1.5rem;
+    top: calc(50% - 1rem);
 }
