@@ -11,6 +11,9 @@
     --icon-color: #9aa0a6;
     --background-button: #303134;
     --link-color: #8ab4f8;
+    --background-footer: #171717;
+    --color-border-footer: #3c4043;
+    --color-letter-footer: #9aa0a6;
 
 }
 *{
@@ -86,6 +89,13 @@ img{
     display: flex;
     justify-content: flex-end;
 }
+.cabecera .menu li{
+    font-size: 1.3rem;
+}
+.cabecera .menu li i{
+    color: var(--blanco);
+    font-size: 1.3rem;
+}
 .cabecera .menu li img{
     width: 3rem;
     height: 3rem;
@@ -112,8 +122,6 @@ img{
 }
 .main form .group-field.text{
     position: relative;
-}
-.main form .group-field.text{
 }
 .main form .group-field.text input{
     min-width: 50rem;
@@ -143,4 +151,24 @@ img{
 .main p span{
     color: var(--link-color);
     margin-left: 1.5rem;
+}
+/* 
+    FOOTER
+*/
+.pie-pagina{
+    background: var(--background-footer);
+    font-size: 1.5rem;
+}
+.pie-pagina p,
+.pie-pagina a{
+    color: var(--color-letter-footer);
+}
+.pie-pagina .pais{    
+    padding: 2rem;
+    border-bottom: 1px solid var(--color-border-footer);
+}
+.pie-pagina .sobre-google{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
 }
