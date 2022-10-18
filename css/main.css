@@ -9,6 +9,8 @@
     */
     --primary-color: #202124;
     --icon-color: #9aa0a6;
+    --background-button: #303134;
+    --link-color: #8ab4f8;
 
 }
 *{
@@ -105,6 +107,9 @@ img{
 .main form{
     text-align: center;
 }
+.main form .group-field{
+    margin-bottom: 2rem;
+}
 .main form .group-field.text{
     position: relative;
 }
@@ -120,4 +125,22 @@ img{
     position: absolute;
     left: 1.5rem;
     top: calc(50% - 1rem);
+}
+.main form .group-field button{
+    border: none;
+    background: var(--background-button);
+    color: var(--blanco);
+    padding: 1rem 1.5rem;
+    border-radius: 3px;
+    font-size: 1.4rem;
+}
+.main form .group-field button:first-of-type{
+    margin-right: 1rem;
+}
+.main p{
+    font-size: 1.3rem;
+}
+.main p span{
+    color: var(--link-color);
+    margin-left: 1.5rem;
 }
