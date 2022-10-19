@@ -14,7 +14,8 @@
     --background-footer: #171717;
     --color-border-footer: #3c4043;
     --color-letter-footer: #9aa0a6;
-
+    --color-border-input: #5f6368;
+    --background-hover: #303134;
 }
 *{
     padding: 0 ;
@@ -53,6 +54,9 @@ img{
     height: auto;
     display: inline-block;
 }
+input:focus{
+    outline: none;
+}
 /* 
     UTILITARIOS
 */
@@ -88,13 +92,14 @@ img{
 .cabecera{
     display: flex;
     justify-content: flex-end;
+    padding: 1.5rem 2.5rem;
 }
 .cabecera .menu li{
     font-size: 1.3rem;
 }
 .cabecera .menu li i{
     color: var(--blanco);
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 .cabecera .menu li img{
     width: 3rem;
@@ -124,15 +129,28 @@ img{
     position: relative;
 }
 .main form .group-field.text input{
-    min-width: 50rem;
+    min-width: 58.2rem;
     border-radius: 3rem;
     border: none;
-    padding: 1.5rem 2rem;
+    background: transparent;
+    border: 1px solid var(--background-hover);
+    padding: 1.5rem 2rem 1.5rem 4rem;
+    color: var(--blanco);
+    font-size: 1.6rem;;
+}
+.main form .group-field.text input:hover{
+    background: var(--color-border-input);
 }
 .main form .group-field.text span{
     position: absolute;
     left: 1.5rem;
     top: calc(50% - 1rem);
+}
+.main form .group-field.text span + span{
+    left: calc(100% - 3.5rem);
+}
+.main form .group-field.text span i{
+    color: var(--icon-color);
 }
 .main form .group-field button{
     border: none;
